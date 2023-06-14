@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="Images/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="Styles/index.css" />
+    <style>
+        .form__input {
+            width: 100%;
+            max-width: auto;
+        }
+    </style>
+    <title>ESGold</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <!-- logo -->
+        <figure class="logo">
+            <a href="index.html">
+                <img src="Images/logo.png" alt="logo" class="logo__img" />
+            </a>
+        </figure>
+        <!-- /logo -->
+
+        <div class="nav container">
+            <!-- navbar menu -->
+            <nav class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <div class="dropdown">
+                            <a class="nav__link">
+                                <button id="dropdown" class="dropdown__btn">Language</button>
+                            </a>
+
+                            <div id="dropdown-content" class="dropdown__content">
+                                <a href="#">English</a>
+                                <a href="#">Germany</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="gallery.html" class="nav__link">gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">shop</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">home</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /navbar menu -->
+
+            <!-- logo -->
+            <figure class="nav__logo">
+                <a href="index.html">
+                    <img src="Images/logo.png" alt="logo" class="nav__img" />
+                </a>
+            </figure>
+            <!-- /logo -->
+
+            <!-- navbar actions -->
+            <nav class="nav__toolbar">
+                <ul class="nav__toolbar__list">
+                    <li class="nav__toolbar__item">
+                        <i title="Search" class="ri-search-line nav__toolbar__link" id="search-icon"></i>
+                    </li>
+                    <li class="nav__toolbar__item">
+                        <a title="Sign up" href="register.html">
+                            <i class="ri-user-add-line nav__toolbar__link"></i>
+                        </a>
+                    </li>
+                    <li class="nav__toolbar__item">
+                        <a title="Log in" href="login.html">
+                            <i class="ri-login-box-line nav__toolbar__link"></i>
+                        </a>
+                    </li>
+                    <li class="nav__toolbar__item" id="my-favorite">
+                        <i title="Favorite" class="ri-heart-line nav__toolbar__link"></i>
+                        <span>15</span>
+                    </li>
+                    <li class="nav__toolbar__item nav__toolbar__link" id="shopping-card">
+                        <i title="Shopping Cart" class="ri-shopping-bag-line"></i>
+                        <span>2</span>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /navbar actions -->
+        </div>
+    </header>
+    <!-- /header -->
+
+    <!-- payment -->
+    <div class="payment">
+        <div class="payment__container container mt-7">
+            <div class="payment__content">
+                <div class="payment__left">
+                    <h2 class="payment__title">
+                        <i class="ri-shopping-cart-line"></i> ShoppingCart
+                    </h2>
+
+                    <ul class="shoppingcart__list">
+
+                        <!-- item -->
+                        <li class="shoppingcart__item">
+                            <div class="shoppingcart__image">
+                                <a href="shop_product.html">
+                                    <img src="Images/IMG-20230210-WA0002.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="shoppingcart__description">
+                                <p>585 gold bracelet children - heart</p>
+
+                                <div class="shoppingcart__amount">
+                                    <div class="shoppingcart__actions">
+                                        <span class="shoppingcart__minus">
+                                            <i class="ri-subtract-line"></i>
+                                        </span>
+
+                                        <span class="shoppingcart__count">1</span>
+
+                                        <span class="shoppingcart__plus">
+                                            <i class="ri-add-line"></i>
+                                        </span>
+                                    </div>
+
+                                    <i class="ri-delete-bin-line shoppingcart__trash"></i>
+                                </div>
+                            </div>
+
+                            <div class="shoppingcart__price">
+                                <span>25$</span>
+                            </div>
+                        </li>
+                        <!-- /item -->
+
+                    </ul>
+                </div>
+
+                <div class="payment__right">
+                    <h2 class="payment__title">
+                        <i class="ri-money-euro-circle-line"></i> Payment
+                    </h2>
+
+                    <form action="" method="post">
+                        <div class="shippment">
+                            <div>
+                                <a href=""><i class="bi bi-person-check-fill"></i></a>
+                                <p>In-person delivery</p>
+                            </div>
+                            <div>
+                                <a href=""><i class="bi bi-truck"></i></a>
+                                <p>Delivery by post</p>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        <!-- <ul class="payment__list">
+                            <li class="payment__item">
+                                <input type="radio" name="payment" id="paypal" checked>
+                                <label for="paypal">
+                                    <img src="Images/hd-official-blue-paypal-logo-trademark-png-216352711957dpeuc7foy.png"
+                                        alt="">
+                                </label>
+                            </li>
+                            <li class="payment__item">
+                                <input type="radio" name="payment" id="visa">
+                                <label for="visa">
+                                    <img src="Images/Logo-Visa-Card-PNG.png" alt="">
+                                </label>
+                            </li>
+                            <li class="payment__item">
+                                <input type="radio" name="payment" id="cart">
+                                <label for="cart">
+                                    <img src="Images/slider.png.webp" alt="">
+                                </label>
+                            </li>
+                            <li class="payment__item">
+                                <input type="radio" name="payment" id="klarna">
+                                <label for="klarna">
+                                    <img src="Images/62b32650b223544c209f5eb6.png" alt="">
+                                </label>
+                            </li>
+                        </ul> -->
+
+                        <div>
+                            <label class="form__label">User Information</label>
+
+                            <div class="form__two__column">
+                                <input type="text" class="form__input" placeholder="FirstName" />
+                                <input type="text" class="form__input" placeholder="LastName" />
+                            </div>
+
+                            <input type="text" class="form__input" placeholder="Birthdate" />
+                        </div>
+
+                        <div>
+                            <label class="form__label">Contact Information</label>
+
+                            <div class="form__two__column">
+                                <input type="text" class="form__input" placeholder="Mobile" />
+                                <input type="text" class="form__input" placeholder="Telephone" />
+                            </div>
+
+                            <input type="text" class="form__input" placeholder="Email" />
+                        </div>
+
+                        <div>
+                            <label class="form__label">Address</label>
+
+                            <div class="form__two__column">
+                                <input type="text" class="form__input" placeholder="Street" />
+                                <input type="text" class="form__input" placeholder="No." />
+                            </div>
+
+                            <div class="form__two__column">
+                                <input type="text" class="form__input" placeholder="PostalCode" />
+                                <input type="text" class="form__input" placeholder="City" />
+                            </div>
+
+                            <div class="form__two__column">
+                                <select name="" id="" class="form__input">
+                                    <option value="">Select Your Country</option>
+                                    <option value="germany">Germany</option>
+                                </select>
+
+                                <select name="" id="" class="form__input">
+                                    <option value="">Select Personal or company</option>
+                                    <option value="personal">Personal</option>
+                                    <option value="company">Company</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <button class="btn btn--text-black">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /payment -->
+
+    <!-- search content -->
+    <div class="search" id="search">
+        <i class="ri-close-line" id="search-close-icon"></i>
+        <div class="search__content">
+            <input type="text" class="search__input" placeholder="Search..." />
+            <button class="search__btn" type="submit">
+                <i class="ri-search-line"></i>
+            </button>
+        </div>
+    </div>
+    <!-- /search content -->
+
+    <!-- favorite content -->
+    <aside class="sidebar" id="favorite-sidebar">
+        <header class="sidebar__header">
+            <i class="sidebar__close ri-close-line" id="favorite-sidebar-close"></i>
+
+            <h3 class="sidebar__title">
+                <i class="ri-heart-line"></i> My Favorite
+            </h3>
+        </header>
+
+        <hr class="sidebar__splitter" />
+
+        <div class="favorite__content">
+            <ul class="favorite__list">
+
+                <!-- item -->
+                <li class="favorite__item">
+                    <div class="favorite__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="favorite__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="favorite__amount">
+                            <a href="">
+                                <i class="ri-shopping-cart-line"></i>
+                                Add To Cart
+                            </a>
+                            <i class="ri-delete-bin-line favorite__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="item__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+                <!-- /item -->
+
+            </ul>
+
+        </div>
+
+    </aside>
+    <!-- /favorite content -->
+
+    <!-- shoppingcart content -->
+    <aside class="sidebar" id="sidebar">
+        <header class="sidebar__header">
+            <i class="sidebar__close ri-close-line" id="sidebar-close"></i>
+
+            <h3 class="sidebar__title">
+                <i class="ri-shopping-cart-line"></i> My Cart
+            </h3>
+        </header>
+
+        <hr class="sidebar__splitter" />
+
+        <div class="shoppingcart__content">
+
+            <ul class="shoppingcart__list">
+
+                <!-- item -->
+                <li class="shoppingcart__item">
+                    <div class="shoppingcart__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="shoppingcart__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="shoppingcart__amount">
+                            <div class="shoppingcart__actions">
+                                <span class="shoppingcart__minus">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="shoppingcart__count">1</span>
+
+                                <span class="shoppingcart__plus">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-line shoppingcart__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="shoppingcart__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+                <!-- /item -->
+
+        </div>
+
+        <footer class="sidebar__footer">
+            <a href="paymant.html">Payment</a>
+        </footer>
+
+
+    </aside>
+    <!-- /shoppingcart content -->
+
+    <script src="Js/main.js"></script>
+</body>
+
+</html>

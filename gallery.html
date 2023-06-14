@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="Images/favicon-32x32.png" />
+    <link rel="stylesheet" href="Styles/index.css" />
+    <title>ESGold</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <!-- logo -->
+        <figure class="logo">
+            <a href="/index.html">
+                <img src="Images/logo.png" alt="logo" class="logo__img" />
+            </a>
+        </figure>
+        <!-- /logo -->
+
+        <div class="nav container">
+            <!-- navbar menu -->
+            <nav class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <div class="dropdown">
+                            <a class="nav__link">
+                                <button id="dropdown" class="dropdown__btn">Language</button>
+                            </a>
+
+                            <div id="dropdown-content" class="dropdown__content">
+                                <a href="#">English</a>
+                                <a href="#">Germany</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="gallery.html" class="nav__link">gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">shop</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">home</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /navbar menu -->
+
+            <!-- logo -->
+            <figure class="nav__logo">
+                <a href="/">
+                    <img src="Images/logo.png" alt="logo" class="nav__img" />
+                </a>
+            </figure>
+            <!-- /logo -->
+
+            <!-- navbar actions -->
+            <nav class="nav__toolbar">
+                <ul class="nav__toolbar__list">
+                    <li class="nav__toolbar__item">
+                        <i title="Search" class="ri-search-line nav__toolbar__link" id="search-icon"></i>
+                    </li>
+                    <li class="nav__toolbar__item">
+                        <a title="Sign up" href="register.html">
+                            <i class="ri-user-add-line nav__toolbar__link"></i>
+                        </a>
+                    </li>
+                    <li class="nav__toolbar__item">
+                        <a title="Log in" href="login.html">
+                            <i class="ri-login-box-line nav__toolbar__link"></i>
+                        </a>
+                    </li>
+                    <li class="nav__toolbar__item" id="my-favorite">
+                        <i title="Favorite" class="ri-heart-line nav__toolbar__link"></i>
+                        <span>15</span>
+                    </li>
+                    <li class="nav__toolbar__item nav__toolbar__link" id="shopping-card">
+                        <i title="Shopping Cart" class="ri-shopping-bag-line"></i>
+                        <span>2</span>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /navbar actions -->
+        </div>
+    </header>
+    <!-- /header -->
+
+    <!-- category -->
+    <div class="category">
+        <div class="category__container container mt-7">
+            <ul class="category__list">
+                <!-- item -->
+                <li class="category__item" style="background-image: url(./Images/Depositphotos_31729885_XL.jpg)">
+                    <a href="#" class="category__overlay">
+                        <h3 class="category__title">Handmade</h3>
+                    </a>
+                </li>
+                <!-- /item -->
+
+                <li class="category__item" style="background-image: url(./Images/Depositphotos_78348384_XL.jpg)">
+                    <a href="#" class="category__overlay">
+                        <h3 class="category__title">LaserPrint</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /category -->
+
+    <!-- search content -->
+    <div class="search" id="search">
+        <i class="ri-close-line" id="search-close-icon"></i>
+        <div class="search__content">
+            <input type="text" class="search__input" placeholder="Search..." />
+            <button class="search__btn" type="submit">
+                <i class="ri-search-line"></i>
+            </button>
+        </div>
+    </div>
+    <!-- /search content -->
+
+    <!-- favorite content -->
+    <aside class="sidebar" id="favorite-sidebar">
+        <header class="sidebar__header">
+            <i class="sidebar__close ri-close-line" id="favorite-sidebar-close"></i>
+
+            <h3 class="sidebar__title">
+                <i class="ri-heart-line"></i> My Favorite
+            </h3>
+        </header>
+
+        <hr class="sidebar__splitter" />
+
+        <div class="favorite__content">
+            <ul class="favorite__list">
+
+                <!-- item -->
+                <li class="favorite__item">
+                    <div class="favorite__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="favorite__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="favorite__amount">
+                            <a href="">
+                                <i class="ri-shopping-cart-line"></i>
+                                Add To Cart
+                            </a>
+                            <i class="ri-delete-bin-line favorite__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="item__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+                <!-- /item -->
+
+                <li class="favorite__item">
+                    <div class="favorite__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="favorite__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="favorite__amount">
+                            <a href="">
+                                <i class="ri-shopping-cart-line"></i>
+                                Add To Cart
+                            </a>
+                            <i class="ri-delete-bin-line favorite__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="item__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+
+                <li class="favorite__item">
+                    <div class="favorite__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="favorite__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="favorite__amount">
+                            <a href="">
+                                <i class="ri-shopping-cart-line"></i>
+                                Add To Cart
+                            </a>
+                            <i class="ri-delete-bin-line favorite__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="item__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+
+                <li class="favorite__item">
+                    <div class="favorite__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="favorite__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="favorite__amount">
+                            <a href="">
+                                <i class="ri-shopping-cart-line"></i>
+                                Add To Cart
+                            </a>
+                            <i class="ri-delete-bin-line favorite__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="item__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+
+                <li class="favorite__item">
+                    <div class="favorite__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="favorite__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="favorite__amount">
+                            <a href="">
+                                <i class="ri-shopping-cart-line"></i>
+                                Add To Cart
+                            </a>
+                            <i class="ri-delete-bin-line favorite__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="item__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+                <li class="favorite__item">
+                    <div class="favorite__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="favorite__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="favorite__amount">
+                            <a href="">
+                                <i class="ri-shopping-cart-line"></i>
+                                Add To Cart
+                            </a>
+                            <i class="ri-delete-bin-line favorite__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="item__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+                <li class="favorite__item">
+                    <div class="favorite__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="favorite__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="favorite__amount">
+                            <a href="">
+                                <i class="ri-shopping-cart-line"></i>
+                                Add To Cart
+                            </a>
+                            <i class="ri-delete-bin-line favorite__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="item__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+                <li class="favorite__item">
+                    <div class="favorite__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="favorite__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="favorite__amount">
+                            <a href="">
+                                <i class="ri-shopping-cart-line"></i>
+                                Add To Cart
+                            </a>
+                            <i class="ri-delete-bin-line favorite__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="item__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+    <!-- /favorite content -->
+
+    <!-- shoppingcart content -->
+    <aside class="sidebar" id="sidebar">
+        <header class="sidebar__header">
+            <i class="sidebar__close ri-close-line" id="sidebar-close"></i>
+
+            <h3 class="sidebar__title">
+                <i class="ri-shopping-cart-line"></i> My Cart
+            </h3>
+        </header>
+
+        <hr class="sidebar__splitter" />
+
+        <div class="shoppingcart__content">
+
+            <ul class="shoppingcart__list">
+
+                <!-- item -->
+                <li class="shoppingcart__item">
+                    <div class="shoppingcart__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="shoppingcart__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="shoppingcart__amount">
+                            <div class="shoppingcart__actions">
+                                <span class="shoppingcart__minus">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="shoppingcart__count">1</span>
+
+                                <span class="shoppingcart__plus">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-line shoppingcart__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="shoppingcart__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+                <!-- /item -->
+
+                <li class="shoppingcart__item">
+                    <div class="shoppingcart__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="shoppingcart__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="shoppingcart__amount">
+                            <div class="shoppingcart__actions">
+                                <span class="shoppingcart__minus">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="shoppingcart__count">1</span>
+
+                                <span class="shoppingcart__plus">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-line shoppingcart__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="shoppingcart__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+
+                <li class="shoppingcart__item">
+                    <div class="shoppingcart__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="shoppingcart__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="shoppingcart__amount">
+                            <div class="shoppingcart__actions">
+                                <span class="shoppingcart__minus">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="shoppingcart__count">1</span>
+
+                                <span class="shoppingcart__plus">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-line shoppingcart__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="shoppingcart__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+
+                <li class="shoppingcart__item">
+                    <div class="shoppingcart__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="shoppingcart__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="shoppingcart__amount">
+                            <div class="shoppingcart__actions">
+                                <span class="shoppingcart__minus">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="shoppingcart__count">1</span>
+
+                                <span class="shoppingcart__plus">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-line shoppingcart__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="shoppingcart__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+                <li class="shoppingcart__item">
+                    <div class="shoppingcart__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="shoppingcart__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="shoppingcart__amount">
+                            <div class="shoppingcart__actions">
+                                <span class="shoppingcart__minus">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="shoppingcart__count">1</span>
+
+                                <span class="shoppingcart__plus">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-line shoppingcart__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="shoppingcart__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+                <li class="shoppingcart__item">
+                    <div class="shoppingcart__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="shoppingcart__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="shoppingcart__amount">
+                            <div class="shoppingcart__actions">
+                                <span class="shoppingcart__minus">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="shoppingcart__count">1</span>
+
+                                <span class="shoppingcart__plus">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-line shoppingcart__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="shoppingcart__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+                <li class="shoppingcart__item">
+                    <div class="shoppingcart__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="shoppingcart__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="shoppingcart__amount">
+                            <div class="shoppingcart__actions">
+                                <span class="shoppingcart__minus">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="shoppingcart__count">1</span>
+
+                                <span class="shoppingcart__plus">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-line shoppingcart__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="shoppingcart__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+                <li class="shoppingcart__item">
+                    <div class="shoppingcart__image">
+                        <a href="shop_product.html">
+                            <img src="Images/IMG-20230210-WA0002.jpg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="shoppingcart__description">
+                        <p>585 gold bracelet children - heart</p>
+
+                        <div class="shoppingcart__amount">
+                            <div class="shoppingcart__actions">
+                                <span class="shoppingcart__minus">
+                                    <i class="ri-subtract-line"></i>
+                                </span>
+
+                                <span class="shoppingcart__count">1</span>
+
+                                <span class="shoppingcart__plus">
+                                    <i class="ri-add-line"></i>
+                                </span>
+                            </div>
+
+                            <i class="ri-delete-bin-line shoppingcart__trash"></i>
+                        </div>
+                    </div>
+
+                    <div class="shoppingcart__price">
+                        <span>25$</span>
+                    </div>
+                </li>
+
+        </div>
+
+        <footer class="sidebar__footer">
+            <a href="payment.html">Payment</a>
+        </footer>
+
+
+    </aside>
+    <!-- /shoppingcart content -->
+
+    <script src="Js/main.js"></script>
+</body>
+
+</html>
